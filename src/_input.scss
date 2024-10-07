@@ -1,0 +1,90 @@
+$form-background: #f9f9f9;
+$input-border: #ccc;
+$input-focus-border: #007BFF;
+$button-background: #007BFF;
+$button-color: #fff;
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $form-background;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+//Checkbox
+.text-input,
+.checkbox-input,
+.radio-input {
+    margin-top: 5px;
+}
+
+.text-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $input-border;
+    border-radius: 4px;
+
+    &:focus {
+        border-color: $input-focus-border;
+        outline: none;
+    }
+}
+
+.checkbox-input {
+    width: auto;
+}
+
+//Radio
+.radio-input {
+    width: auto;
+}
+
+//Button
+.submit-button {
+    background-color: $button-background;
+    color: $button-color;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken($button-background, 10%);
+    }
+}
+
+//Password
+input {
+  padding: $font-gap;
+  border: 1px solid $gray;
+  border-radius: $font-gap;
+  width: 100%;
+  font-size: $font-md;
+  font-family: inherit;
+}
+
+
+input[type="password"],
+ {
+  height: 40px;
+  margin-bottom: $font-gap;
+}
+
+input[type="password"] {
+  font-family: 'Poppins';
+  letter-spacing: 0.1em;
+}
+
+
+input[type="password"]:focus,
+ {
+  outline: none;
+  border-color: map-get($themes, "primary");
+  box-shadow: 0 0 0 2px map-get($themes, "primary");
+}
