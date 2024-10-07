@@ -1,0 +1,24 @@
+// @use 'sass:color';
+// @use 'typography';
+// @use 'colors' as *;
+// @use 'variables';
+
+// Lists
+// Global reset without overriding list-style
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    list-style-type: decimal; /* Ensures numbers appear */
+    margin-left: 20px; /* Adds spacing to the left */
+  }
+
+  ul {
+    list-style-type: disc; /* Ensures bullets appear */
+    margin-left: 20px; /* Adds spacing to the left */
+  }
+
+
+
