@@ -1,24 +1,61 @@
-// @use 'sass:color';
-// @use 'typography';
-// @use 'colors' as *;
-// @use 'variables';
 
-// Lists
-// Global reset without overriding list-style
+// Lists Option 1
 ul, ol {
     margin: 0;
     padding: 0;
-}
-
-ol {
-    list-style-type: decimal; /* Ensures numbers appear */
-    margin-left: 20px; /* Adds spacing to the left */
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: $font-gap;
+  }
+  
+  // List option 2
+  .list-unstyled {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-inline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  
+    li {
+      display: inline-block;
+      margin-right: $font-gap;
+    }
+  }
+  
+  .list-inline li:last-child {
+    margin-right: 0;
   }
 
-  ul {
-    list-style-type: disc; /* Ensures bullets appear */
-    margin-left: 20px; /* Adds spacing to the left */
+  //Option #3 
+ 
+.list-striped {
+    list-style: none;
+    padding: 0;
+  
+    li {
+      padding: $font-gap;
+      border-bottom: 1px solid $gray;
+  
+      &:last-child {
+        border-bottom: none;
+      }
+    }
   }
-
-
-
+  
+  //Option 4
+  .list-bordered {
+    list-style: none;
+    padding: 0;
+  
+    li {
+      padding: $font-gap;
+      border: 1px solid $gray;
+      border-radius: $font-gap;
+      margin-bottom: $font-gap;
+    }
+  }

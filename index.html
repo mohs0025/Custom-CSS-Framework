@@ -33,10 +33,7 @@
         <p class="text-right">text aligned left right</p>
 
 
-
-
     <!-- color pallet-text -->
-     
     <h3 class="color-primary">The Primary colour</h3>
     <h3 class="color-secondary">The Secondary colour</h3>
     <h3 class="color-warning">The Warning colour</h3>
@@ -54,55 +51,43 @@
     <div style="height:100px; width:250px;" class="bg-light">&nbsp;</div>
     <div style="height:100px; width:250px;" class="bg-dark">&nbsp;</div>
 
-<!-- table -->
-<section>
-    <h2>Tables</h2>
-    <table>
-        <thead>
-            <tr class="bg-primary color-white ">
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>30</td>
-                <td>New York</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>25</td>
-                <td>Los Angeles</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-
-
-
-<!-- order-unorder Lists -->
+     <!-- Lists -->
       
-<h2>Lists</h2>
+      <h2>Lists</h2>
+      <ul class="list-unstyled">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+      </ul>
+  
+      <ul class="list-inline">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+      </ul>
+  
+      <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+      </ol>
+      <h2>Striped List</h2>
+      <ul class="list-striped">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+      </ul>
 
-<!-- Ordered List (with numbers) -->
-<ol>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ol>
+      <h2>Bordered List</h2>
+      <ul class="list-bordered">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+      </ul>
 
-<!-- Unordered List (with bullets) -->
-<ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ul>
-
-
-<h2>Forms</h2>
+      <div>
         <form>
+
             <label for="name">Name</label>
             <input type="text" id="name" placeholder="Your Name">
             <label for="message">Message</label>
@@ -133,21 +118,30 @@
     <input type="password" placeholder="Password input" id="password" name="password">
             </form>
         </div>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
         
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
         
-
-
-<!-- Buttons -->
-<a class="btn" href="#">This is a button</a>
-
-<a class="btn-error" href="#">This is an error button</a>
-
-<a class="btn-success" href="#">This is a success button</a>
-
-<a class="btn-info" href="#">This is an info button</a>
-
-
-
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        
+            <label for="checkbox">Checkbox:</label>
+            <input type="checkbox" id="checkbox">
+        
+            <label for="radio">Radio:</label>
+            <input type="radio" id="radio" name="radio">
+        
+            <label for="error">Error:</label>
+            <input type="text" id="error" class="input-error" placeholder="Error input">
+        
+            <label for="success">Success:</label>
+            <input type="text" id="success" class="input-success" placeholder="Success input">
+          </form>
+      </div>
 
 
 </main>
