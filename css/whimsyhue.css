@@ -151,19 +151,19 @@ p {
 }
 
 .color-secondary {
-  color: #6c757d;
-}
-
-.bg-secondary {
-  background-color: #6c757d;
-}
-
-.color-warning {
   color: #F94A29;
 }
 
-.bg-warning {
+.bg-secondary {
   background-color: #F94A29;
+}
+
+.color-warning {
+  color: #FCE22A;
+}
+
+.bg-warning {
+  background-color: #FCE22A;
 }
 
 .color-info {
@@ -175,11 +175,11 @@ p {
 }
 
 .color-success {
-  color: #FCE22A;
+  color: #73EC8B;
 }
 
 .bg-success {
-  background-color: #FCE22A;
+  background-color: #73EC8B;
 }
 
 .color-light {
@@ -222,6 +222,35 @@ a:hover {
   text-decoration: none;
   color: hsl(0, 0%, 110%);
   background-color: #D61355;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+main {
+  margin: 50px 0px;
+  padding: 0 70px;
+}
+main.sm {
+  max-width: 480px;
+  margin: 0 auto;
+}
+main.md {
+  max-width: 960px;
+  margin: 0 auto;
+}
+main.lg {
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=whimsyhue.css.map */
