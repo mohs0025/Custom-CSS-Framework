@@ -1,0 +1,16 @@
+@use 'sass:color';
+@use 'typography';
+@use 'colors' as *;
+@use 'variables';
+
+// Links
+a {
+    text-decoration: underline;
+    color: map-get($themes, "primary");
+
+    &:hover {
+        text-decoration: none;
+        color: color.adjust(map-get($themes, "white"), $lightness: 10%);
+        background-color: map-get($themes, "primary");
+    }
+}

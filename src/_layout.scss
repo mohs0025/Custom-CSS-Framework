@@ -1,0 +1,23 @@
+// Main Container
+
+main {
+    margin: 30px 0px;
+    padding: 0 30px;
+
+    &.sm {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    &.md {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    &.lg {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+
+}

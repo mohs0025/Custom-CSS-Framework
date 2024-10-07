@@ -1,0 +1,32 @@
+// Colours
+$magenta: #D61355;
+$orange: #F94A29;
+$yellow: #FCE22A;
+$cyan: #30E3DF;
+$mintGreen: #73EC8B;
+$black: #000;
+$gray: #6c757d;
+$white: #FFF;
+
+// Themes
+$themes: (
+    "primary": $magenta,
+    "secondary": $gray,
+    "warning": $orange,
+    "info": $cyan,
+    "success": $yellow,
+    "light": $gray,
+    "dark": $black,
+    "white": $white,
+    "mint": $mintGreen
+);
+
+@each $name, $color in $themes {
+    .color-#{$name} {
+        color: $color;
+    }
+
+    .bg-#{$name} {
+        background-color: $color;
+    }
+}

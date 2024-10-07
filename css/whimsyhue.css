@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /***
     The new CSS reset - By Elad Shechter: https://github.com/elad2412/the-new-css-reset
 ***/
@@ -84,6 +85,143 @@ meter {
 
 ::-webkit-details-marker {
   display: none;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 0.6rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+h6 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.color-primary {
+  color: #D61355;
+}
+
+.bg-primary {
+  background-color: #D61355;
+}
+
+.color-secondary {
+  color: #6c757d;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.color-warning {
+  color: #F94A29;
+}
+
+.bg-warning {
+  background-color: #F94A29;
+}
+
+.color-info {
+  color: #30E3DF;
+}
+
+.bg-info {
+  background-color: #30E3DF;
+}
+
+.color-success {
+  color: #FCE22A;
+}
+
+.bg-success {
+  background-color: #FCE22A;
+}
+
+.color-light {
+  color: #6c757d;
+}
+
+.bg-light {
+  background-color: #6c757d;
+}
+
+.color-dark {
+  color: #000;
+}
+
+.bg-dark {
+  background-color: #000;
+}
+
+.color-white {
+  color: #FFF;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.color-mint {
+  color: #73EC8B;
+}
+
+.bg-mint {
+  background-color: #73EC8B;
+}
+
+a {
+  text-decoration: underline;
+  color: #D61355;
+}
+a:hover {
+  text-decoration: none;
+  color: hsl(0, 0%, 110%);
+  background-color: #D61355;
 }
 
 /*# sourceMappingURL=whimsyhue.css.map */
