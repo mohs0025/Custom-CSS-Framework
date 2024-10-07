@@ -1,0 +1,28 @@
+@use 'variables';
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    th {
+        padding: 10px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    td {
+        padding: 10px;
+        border: 1px solid #ddd; // Add borders for better visuals
+    }
+}
+
+
+// "primary": $magenta,
+// "secondary": $orange,
+// "warning": $yellow,
+// "info": $cyan,
+// "success": $mintGreen,
+// "light": $gray,
+// "dark": $black,
+// "white": $white,
+// "mint": $mintGreen
