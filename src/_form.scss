@@ -9,25 +9,47 @@ input, textarea {
 }
 
 .form-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  .form-container .form-group {
-    margin-bottom: 15px;
-  }
-  .form-container .form-group label {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+  p {
     margin-bottom: 5px;
     font-weight: bold;
-    display: inline-block;
   }
-  .form-container .form-group label .checkbox-input,
-  .form-container .form-group label .radio-input {
-    margin-right: 10px;
-    margin-top: 5px;
+
+  label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .checkbox-input,
+  .radio-input {
+    margin: 0;
     width: auto;
+    appearance: none; /* Remove default styling */
+    height: 20px;
+    width: 20px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:checked {
+      background-color: #000; /* Change color when checked */
+    }
   }
-  
+
+  .radio-input {
+    border-radius: 50%; /* Make radio buttons circular */
+  }
+}
+
   
