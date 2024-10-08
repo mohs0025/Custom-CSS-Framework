@@ -23,47 +23,44 @@
 //   margin-left: 20px; 
 // }
 
-
-
-ul, ol {
-  padding-left: 1.5rem; // Adjust padding for lists
-  margin-bottom: 1rem;
-  
-  li {
-      font-size: 1rem; // Adjust the font size for list items
-      line-height: 1.6;
-      padding: 0.5rem 0;
-
-      // Adding playful bullets/icons for unordered lists
-      ul & {
-          position: relative;
-          padding-left: 1.5rem;
-
-          &:before {
-              content: '\2022'; // Default bullet symbol
-              color: map-get($themes, "primary"); // Use primary color for bullets
-              font-size: 1.5rem;
-              position: absolute;
-              left: 0;
-              top: 0;
-          }
-      }
-      
-      // Style ordered lists with colorful numbers
-      ol & {
-          counter-increment: list-counter;
-          position: relative;
-          padding-left: 2rem;
-
-          &:before {
-              content: counter(list-counter) ". ";
-              color: map-get($themes, "secondary"); // Use secondary color for numbers
-              font-weight: bold;
-              font-size: 1.2rem;
-              position: absolute;
-              left: 0;
-              top: 0;
-          }
-      }
+.table {
+    border-collapse: collapse;
   }
-}
+  
+  th, td {
+    border: 1px solid $magenta;
+    padding: 8px;
+    text-align: left;
+  }
+
+
+
+.table-hover{
+    border-collapse: collapse;
+  }
+  
+  tr:hover {
+    background-color: $magenta;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+
+
+  .table-stripped {
+    border-collapse: collapse;
+  }
+  
+  tr:nth-child(even) {
+    background-color: $gray;
+  }
+  
+  th, td {
+    border: 1px solid $white;
+    padding: 8px;
+    text-align: left;
+  }

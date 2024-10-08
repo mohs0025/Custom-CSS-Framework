@@ -1,4 +1,5 @@
-
+@use 'colors';
+@use 'typography';
 .button {
     display: inline-block;
     padding: 0.5rem 1rem;
@@ -14,51 +15,49 @@
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
   
-  /* Button colors */
+ /*buttons**/
+.button{
+    background-color:$gray;
+      padding: 10px 10px;
+      line-height: 1.5;
+      cursor: pointer;
+      border: 1px solid $magenta;
+      margin: 15px;
+  }
+  
+  
   .button-primary {
     color: $white;
-    background-color: $magenta;
-    border-color: $magenta;
+    border: 1px solid $magenta;
+     
   }
   
   .button-secondary {
-    color: $white;
-    background-color: $orange;
-    border-color: $orange;
+    color: $magenta;
+    border: 1px solid $gray;
+    background-color: $white;
   }
   
   .button-success {
     color: $white;
-    background-color: $mintGreen;
-    border-color: $mintGreen;
+    background-color:  $magenta;
+   
   }
   
   .button-warning {
-    color: $white;
+    color:$black;
     background-color: $yellow;
     border-color: $yellow;
   }
   
   .button-info {
-    color: $white;
-    background-color: $cyan;
-    border-color: $cyan;
-  }
-  
-  .button-danger {
-    color: $white;
-    background-color: $black;
-    border-color: $black;
-  }
-  
-  .button-light {
     color: $black;
-    background-color: $gray;
-    border-color: $gray;
+    background-color: $cyan;
   }
+  
   
   .button-dark {
-    color: $white;
+    color:$white;
     background-color: $black;
     border-color: $black;
   }
@@ -66,37 +65,15 @@
   .button-white {
     color: $black;
     background-color: $white;
-    border-color: $white;
   }
   
-  /* Button sizes */
+  
   .button-lg {
     padding: 0.75rem 1.5rem;
-    font-size: $font-lg;
   }
   
   .button-sm {
     padding: 0.25rem 0.75rem;
-    font-size: $font-sm;
   }
   
-  /* Button hover and active styles */
-  .button:hover {
-    color: $white;
-    background-color: darken($magenta, 10%);
-    border-color: darken($magenta, 10%);
-  }
   
-  .button:active {
-    background-color: darken($magenta, 20%);
-    border-color: darken($magenta, 20%);
-    box-shadow: 0 0 0 0.2rem rgba($magenta, 0.5);
-  }
-  
-  /* Button disabled styles */
-  .button:disabled {
-    color: $gray;
-    background-color: $light;
-    border-color: $gray;
-    cursor: not-allowed;
-  }

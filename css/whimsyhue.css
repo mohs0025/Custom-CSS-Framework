@@ -505,3 +505,114 @@ input:focus, textarea:focus {
 }
 
 /*# sourceMappingURL=whimsyhue.css.map */
+
+
+/*buttons**/
+.button{
+  background-color: #6c757d;
+    padding: 10px 10px;
+    line-height: 1.5;
+    cursor: pointer;
+    border: 1px solid #D61355;
+    margin: 15px;
+}
+
+
+.button-primary {
+  color: white;
+  border: 1px solid#D61355;
+   
+}
+
+.button-secondary {
+  color: #D61355;
+  border: 1px solid #6c757d;
+  background-color: white;
+}
+
+.button-success {
+  color: white;
+  background-color:  #D61355;
+ 
+}
+
+.button-warning {
+  color:black;
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.button-info {
+  color: black;
+  background-color: cyan;
+}
+
+
+.button-dark {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+
+.button-white {
+  color: black;
+  background-color: white;
+}
+
+
+.button-lg {
+  padding: 0.75rem 1.5rem;
+}
+
+.button-sm {
+  padding: 0.25rem 0.75rem;
+}
+
+
+
+/*Tables*/
+
+.table-simple {
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+.table-simple th, .table-simple td {
+  border: 1px solid ;
+  padding: 8px;
+  text-align: left;
+}
+
+
+
+.table-hover{
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+.table-hover tr:hover {
+  background-color: #D61355;
+}
+
+.table-hover th, .table-hover td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left ;
+}
+
+
+
+.table-stripped {
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+.table-stripped  tr:nth-child(even) {
+  background-color: #6c757d;
+}
+
+.table-stripped  th, .table-stripped  td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+}
