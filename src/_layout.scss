@@ -23,6 +23,7 @@ main {
 }
 
 // Define width variables
+$width-xxs: 250px;
 $width-sm: 480px;
 $width-md: 720px;
 $width-lg: 960px;
@@ -30,7 +31,8 @@ $width-xl: 1140px;
 
 // Widths Map
 $widths: (
-  "sm": $width-sm,
+    "xxs": $width-xxs, 
+"sm": $width-sm,
   "md": $width-md,
   "lg": $width-lg,
   "xl": $width-xl
@@ -66,4 +68,9 @@ $margin-xl: 3rem;
 }
 
 
-// new
+
+// Left align for color-palette section
+.color-palette-left-align div {
+  margin-left: 0 !important; // Override centering
+  margin-right: 0; // Ensure it's not centered
+}
