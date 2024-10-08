@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /***
     The new CSS reset - By Elad Shechter: https://github.com/elad2412/the-new-css-reset
@@ -236,6 +237,50 @@ a:hover {
   text-align: right;
 }
 
+.list-bulleted {
+  list-style-type: none;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+.list-bulleted li {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+.list-bulleted li::before {
+  content: "•";
+  color: #D61355;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.list-numbered {
+  list-style-type: none;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+.list-numbered li {
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  counter-increment: list-counter;
+}
+.list-numbered li::before {
+  content: counter(list-counter) ". ";
+  color: #F94A29;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 main {
   margin: 50px 0px;
   padding: 0 70px;
@@ -268,18 +313,39 @@ table td {
 }
 
 ul, ol {
-  margin: 0;
-  padding: 0;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
 }
-
-ol {
-  list-style-type: decimal;
-  margin-left: 20px;
+ul li, ol li {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.5rem 0;
 }
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+ul ul li, ul ol li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+ul ul li:before, ul ol li:before {
+  content: "•";
+  color: #D61355;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+ol ul li, ol ol li {
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 2rem;
+}
+ol ul li:before, ol ol li:before {
+  content: counter(list-counter) ". ";
+  color: #F94A29;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 input, textarea {

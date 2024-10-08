@@ -1,15 +1,65 @@
-// Text Left
+@use 'colors' as *;
+
+// Text Alignment Utilities
 .text-left {
     text-align: left;
 }
 
-// Text Centering
 .text-center {
     text-align: center;
 }
 
-// Text Right
 .text-right {
     text-align: right;
 }
 
+// Utility for Bulleted List (Unordered List)
+.list-bulleted {
+    list-style-type: none; // Remove default bullets
+    padding-left: 2rem; // Ensure alignment with ordered lists
+    margin-bottom: 1rem;
+
+    li {
+        position: relative;
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0.5rem 0;
+        padding-left: 1.5rem; // Adjust padding to align bullets with numbers
+
+        &::before {
+            content: '\2022'; // Bullet symbol
+            color: map-get($themes, "primary"); // Use primary color for bullets
+            font-size: 1.5rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+// Utility for Numbered List (Ordered List)
+.list-numbered {
+    list-style-type: none; // Remove default numbers
+    padding-left: 2rem; // Ensure alignment with unordered lists
+    margin-bottom: 1rem;
+
+    li {
+        position: relative;
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0.5rem 0;
+        padding-left: 1.5rem; // Align numbers with bullets
+
+        counter-increment: list-counter;
+
+        &::before {
+            content: counter(list-counter) ". ";
+            color: map-get($themes, "secondary"); // Use secondary color for numbers
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
