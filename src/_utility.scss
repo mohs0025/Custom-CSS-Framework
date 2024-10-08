@@ -1,5 +1,13 @@
 @use 'colors' as *;
 
+//spacing
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+//borders
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
 // Text Alignment Utilities
 .text-left {
     text-align: left;
@@ -12,6 +20,24 @@
 .text-right {
     text-align: right;
 }
+
+// Container Alignment Utilities
+$alignments: (
+  "left": flex-start,
+  "center": center,
+  "right": flex-end
+);
+
+@each $name, $value in $alignments {
+  .align-#{$name} {
+    display: flex;
+    justify-content: $value;
+    margin: 0; /* Ensure there is no overriding margin */
+    padding: 0;
+  }
+}
+
+
 
 // Utility for Bulleted List (Unordered List)
 .list-bulleted {
@@ -68,8 +94,10 @@
 // Container Utility to Limit Width and Center Elements
 .container {
     width: 100%;
-    max-width: 1140px; // You can adjust this value based on your design
-    margin-left: auto;
+    max-width: 950px; // we can adjust this value based on design
+    // margin-left: auto;
     margin-right: auto;
-    padding: 0 1rem; // Optional padding to prevent elements from touching the edges
+    // padding: 0 1rem; // Optional padding to prevent elements from touching the edges
 }
+
+

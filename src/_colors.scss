@@ -30,3 +30,41 @@ $themes: (
         background-color: $color;
     }
 }
+
+
+
+// button {
+//     color: white;
+//     border: 0;
+//     background-color: $primary;
+// }
+
+// .error {
+//     color: $warning;
+//     border-color: $warning;
+//     border-style: solid;
+// }
+
+// .notification {
+//     color: $info;
+//     border-color: $info;
+//     border-style: solid;
+// }
+
+// button {
+//     color: white;
+//     border: 0;
+//     background-color: map-get($themes, "primary"); // Use the "primary" color from the themes map
+// }
+
+// .error {
+//     color: map-get($themes, "warning"); // Use the "warning" color from the themes map
+//     border-color: map-get($themes, "warning");
+//     border-style: solid;
+// }
+
+// .notification {
+//     color: map-get($themes, "info"); // Use the "info" color from the themes map
+//     border-color: map-get($themes, "info");
+//     border-style: solid;
+// }

@@ -251,14 +251,76 @@ ol ul li:before, ol ol li:before {
   top: 0;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table th {
+  padding: 10px;
+  font-weight: bold;
+}
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
 a {
   text-decoration: underline;
   color: #D61355;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
 }
 a:hover {
   text-decoration: none;
   color: hsl(0, 0%, 110%);
   background-color: #D61355;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  display: inline-block;
+  margin: 10px 0;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: #D61355;
+}
+
+.btn-secondary {
+  background-color: #F94A29;
+}
+
+.btn-warning {
+  background-color: #FCE22A;
+  color: black;
+}
+
+.btn-info {
+  background-color: #30E3DF;
+}
+
+.btn-success {
+  background-color: #73EC8B;
+}
+
+.btn-dark {
+  background-color: #000;
+}
+
+.btn-light {
+  background-color: #6c757d;
+  color: black;
 }
 
 .text-left {
@@ -271,6 +333,27 @@ a:hover {
 
 .text-right {
   text-align: right;
+}
+
+.align-left {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0; /* Ensure there is no overriding margin */
+  padding: 0;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  margin: 0; /* Ensure there is no overriding margin */
+  padding: 0;
+}
+
+.align-right {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0; /* Ensure there is no overriding margin */
+  padding: 0;
 }
 
 .list-bulleted {
@@ -319,10 +402,8 @@ a:hover {
 
 .container {
   width: 100%;
-  max-width: 1140px;
-  margin-left: auto;
+  max-width: 950px;
   margin-right: auto;
-  padding: 0 1rem;
 }
 
 main {
@@ -342,18 +423,76 @@ main.lg {
   margin: 0 auto;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
+.width-sm {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
-table th {
-  padding: 10px;
-  text-align: left;
-  font-weight: bold;
+
+.width-md {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
+
+.width-lg {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-xl {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-top-sm {
+  margin-top: 0.5rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 0.5rem;
+}
+
+.margin-sm {
+  margin: 0.5rem;
+}
+
+.margin-top-md {
+  margin-top: 1rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 1rem;
+}
+
+.margin-md {
+  margin: 1rem;
+}
+
+.margin-top-lg {
+  margin-top: 2rem;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 2rem;
+}
+
+.margin-lg {
+  margin: 2rem;
+}
+
+.margin-top-xl {
+  margin-top: 3rem;
+}
+
+.margin-bottom-xl {
+  margin-bottom: 3rem;
+}
+
+.margin-xl {
+  margin: 3rem;
 }
 
 input, textarea {
@@ -386,8 +525,8 @@ input:focus, textarea:focus {
   cursor: pointer;
 }
 .input-checkbox input[type=checkbox]:checked {
-  background-color: #73EC8B;
-  border-color: #73EC8B;
+  background-color: #D61355;
+  border-color: #D61355;
 }
 
 .input-radio {
@@ -404,8 +543,8 @@ input:focus, textarea:focus {
   cursor: pointer;
 }
 .input-radio input[type=radio]:checked {
-  background-color: #73EC8B;
-  border-color: #73EC8B;
+  background-color: #D61355;
+  border-color: #D61355;
 }
 
 .form-container {
@@ -413,7 +552,7 @@ input:focus, textarea:focus {
   padding: 20px;
   margin-top: 50px;
   border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -430,7 +569,7 @@ input:focus, textarea:focus {
 .form-group label .radio-input {
   margin-right: 10px;
   margin-top: 5px;
-  width: auto; /* Auto width for checkboxes and radio buttons */
+  width: auto;
 }
 
 .input-text {

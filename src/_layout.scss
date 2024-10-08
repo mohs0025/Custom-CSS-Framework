@@ -22,10 +22,48 @@ main {
 
 }
 
-
 // Define width variables
 $width-sm: 480px;
 $width-md: 720px;
 $width-lg: 960px;
 $width-xl: 1140px;
 
+// Widths Map
+$widths: (
+  "sm": $width-sm,
+  "md": $width-md,
+  "lg": $width-lg,
+  "xl": $width-xl
+);
+
+// Generate width utility classes
+@each $name, $width in $widths {
+  .width-#{$name} {
+    max-width: $width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+// Define margin variables for different spacing needs
+$margin-sm: 0.5rem;
+$margin-md: 1rem;
+$margin-lg: 2rem;
+$margin-xl: 3rem;
+
+// Generate margin utility classes
+@each $name, $size in (sm: $margin-sm, md: $margin-md, lg: $margin-lg, xl: $margin-xl) {
+  .margin-top-#{$name} {
+    margin-top: $size;
+  }
+  .margin-bottom-#{$name} {
+    margin-bottom: $size;
+  }
+  .margin-#{$name} {
+    margin: $size;
+  }
+}
+
+
+// new
