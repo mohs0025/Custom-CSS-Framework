@@ -1,0 +1,83 @@
+@use 'colors' as *;
+
+// Styling for Text Inputs (e.g., text, email, password)
+.input-text {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid map-get($themes, "primary"); // Primary color for border
+    border-radius: 5px;
+    font-size: 1rem;
+    color: map-get($themes, "dark"); // Dark color for text
+    background-color: map-get($themes, "light");
+
+    &:focus {
+        outline: none;
+        border-color: map-get($themes, "secondary"); // Secondary color on focus
+        box-shadow: 0 0 5px map-get($themes, "secondary");
+    }
+}
+
+// Styling for Checkboxes
+.input-checkbox {
+    position: relative;
+    margin-right: 0.5rem;
+
+    input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid map-get($themes, "primary"); // Primary color for the checkbox border
+        border-radius: 3px;
+        background-color: map-get($themes, "light");
+        cursor: pointer;
+
+        &:checked {
+            background-color: map-get($themes, "primary"); // Fill with primary color when checked
+            border-color: map-get($themes, "primary");
+        }
+    }
+}
+
+// Styling for Radio Buttons
+.input-radio {
+    position: relative;
+    margin-right: 0.5rem;
+
+    input[type="radio"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid map-get($themes, "primary"); // Primary color for the radio button border
+        border-radius: 50%; // Round shape for radio buttons
+        background-color: map-get($themes, "light");
+        cursor: pointer;
+
+        &:checked {
+            background-color: map-get($themes, "primary"); // Fill with primary color when checked
+            border-color: map-get($themes, "primary");
+        }
+    }
+}
+
+// Styling for Multiple Input Fields (Text, Email, Password, etc.)
+.input-multi {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 100%;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: 2px solid map-get($themes, "primary"); // Primary color for border
+        border-radius: 5px;
+        font-size: 1rem;
+        color: map-get($themes, "dark");
+        background-color: map-get($themes, "light");
+
+        &:focus {
+            outline: none;
+            border-color: map-get($themes, "secondary"); // Secondary color on focus
+            box-shadow: 0 0 5px map-get($themes, "secondary");
+        }
+    }
+}

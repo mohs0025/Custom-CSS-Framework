@@ -63,3 +63,13 @@
         }
     }
 }
+
+
+// Container Utility to Limit Width and Center Elements
+.container {
+    width: 100%;
+    max-width: 1140px; // You can adjust this value based on your design
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem; // Optional padding to prevent elements from touching the edges
+}

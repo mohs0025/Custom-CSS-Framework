@@ -215,6 +215,42 @@ p {
   background-color: #73EC8B;
 }
 
+ul, ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+ul li, ol li {
+  font-size: 1rem;
+  line-height: 1.6;
+  padding: 0.5rem 0;
+}
+ul ul li, ul ol li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+ul ul li:before, ul ol li:before {
+  content: "•";
+  color: #D61355;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+ol ul li, ol ol li {
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 2rem;
+}
+ol ul li:before, ol ol li:before {
+  content: counter(list-counter) ". ";
+  color: #F94A29;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 a {
   text-decoration: underline;
   color: #D61355;
@@ -281,6 +317,14 @@ a:hover {
   top: 0;
 }
 
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
 main {
   margin: 50px 0px;
   padding: 0 70px;
@@ -310,42 +354,6 @@ table th {
 table td {
   padding: 10px;
   border: 1px solid #ddd;
-}
-
-ul, ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-ul li, ol li {
-  font-size: 1rem;
-  line-height: 1.6;
-  padding: 0.5rem 0;
-}
-ul ul li, ul ol li {
-  position: relative;
-  padding-left: 1.5rem;
-}
-ul ul li:before, ul ol li:before {
-  content: "•";
-  color: #D61355;
-  font-size: 1.5rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-ol ul li, ol ol li {
-  counter-increment: list-counter;
-  position: relative;
-  padding-left: 2rem;
-}
-ol ul li:before, ol ol li:before {
-  content: counter(list-counter) ". ";
-  color: #F94A29;
-  font-weight: bold;
-  font-size: 1.2rem;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 input, textarea {
@@ -380,6 +388,77 @@ input:focus, textarea:focus {
   margin-right: 10px;
   margin-top: 5px;
   width: auto;
+}
+
+.input-text {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #D61355;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #6c757d;
+}
+.input-text:focus {
+  outline: none;
+  border-color: #F94A29;
+  box-shadow: 0 0 5px #F94A29;
+}
+
+.input-checkbox {
+  position: relative;
+  margin-right: 0.5rem;
+}
+.input-checkbox input[type=checkbox] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D61355;
+  border-radius: 3px;
+  background-color: #6c757d;
+  cursor: pointer;
+}
+.input-checkbox input[type=checkbox]:checked {
+  background-color: #D61355;
+  border-color: #D61355;
+}
+
+.input-radio {
+  position: relative;
+  margin-right: 0.5rem;
+}
+.input-radio input[type=radio] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D61355;
+  border-radius: 50%;
+  background-color: #6c757d;
+  cursor: pointer;
+}
+.input-radio input[type=radio]:checked {
+  background-color: #D61355;
+  border-color: #D61355;
+}
+
+.input-multi {
+  display: flex;
+  flex-direction: column;
+}
+.input-multi input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid #D61355;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #6c757d;
+}
+.input-multi input:focus {
+  outline: none;
+  border-color: #F94A29;
+  box-shadow: 0 0 5px #F94A29;
 }
 
 /*# sourceMappingURL=whimsyhue.css.map */
