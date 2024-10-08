@@ -358,36 +358,79 @@ table td {
 
 input, textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border: 2px solid #D61355;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #6c757d;
 }
 input:focus, textarea:focus {
   outline: none;
+  border-color: #F94A29;
+  background-color: #73EC8B;
+  box-shadow: 0 0 5px #F94A29;
+}
+
+.input-checkbox {
+  position: relative;
+  margin-right: 0.5rem;
+}
+.input-checkbox input[type=checkbox] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D61355;
+  border-radius: 3px;
+  background-color: #6c757d;
+  cursor: pointer;
+}
+.input-checkbox input[type=checkbox]:checked {
+  background-color: #73EC8B;
+  border-color: #73EC8B;
+}
+
+.input-radio {
+  position: relative;
+  margin-right: 0.5rem;
+}
+.input-radio input[type=radio] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #D61355;
+  border-radius: 50%;
+  background-color: #6c757d;
+  cursor: pointer;
+}
+.input-radio input[type=radio]:checked {
+  background-color: #73EC8B;
+  border-color: #73EC8B;
 }
 
 .form-container {
-  max-width: 400px;
-  margin: 0 auto;
+  max-width: 400px; /* Fixed max width */
   padding: 20px;
+  margin-top: 50px;
   border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
-.form-container .form-group {
+.form-group {
   margin-bottom: 15px;
 }
 
-.form-container .form-group label {
+.form-group label {
   margin-bottom: 5px;
   font-weight: bold;
   display: inline-block;
 }
 
-.form-container .form-group label .checkbox-input,
-.form-container .form-group label .radio-input {
+.form-group label .checkbox-input,
+.form-group label .radio-input {
   margin-right: 10px;
   margin-top: 5px;
-  width: auto;
+  width: auto; /* Auto width for checkboxes and radio buttons */
 }
 
 .input-text {

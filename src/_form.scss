@@ -1,32 +1,90 @@
+@use 'colors' as *; // Import colors to access theme colors
+
+// Styling for Text Inputs and Textareas
 input, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid map-get($themes, "primary"); // Primary color for border
+    border-radius: 5px;
+    font-size: 1rem;
+    color: map-get($themes, "dark"); // Dark color for text
+    background-color: map-get($themes, "light"); // Light color background
 
-  &:focus {
-      outline: none;
-  }
+    &:focus {
+        outline: none;
+        border-color: map-get($themes, "secondary"); // Secondary color for border on focus
+        background-color: map-get($themes, "mint"); // Change background to mint on focus
+        box-shadow: 0 0 5px map-get($themes, "secondary"); // Secondary color for focus shadow
+    }
 }
 
+// Styling for Checkboxes
+.input-checkbox {
+    position: relative;
+    margin-right: 0.5rem;
+
+    input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid map-get($themes, "primary"); // Primary color for the checkbox border
+        border-radius: 3px;
+        background-color: map-get($themes, "light");
+        cursor: pointer;
+
+        &:checked {
+            background-color: map-get($themes, "mint"); // Fill with mint color when checked
+            border-color: map-get($themes, "mint"); // Change border color to mint
+        }
+    }
+}
+
+// Styling for Radio Buttons
+.input-radio {
+    position: relative;
+    margin-right: 0.5rem;
+
+    input[type="radio"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid map-get($themes, "primary"); // Primary color for the radio button border
+        border-radius: 50%; // Round shape for radio buttons
+        background-color: map-get($themes, "light");
+        cursor: pointer;
+
+        &:checked {
+            background-color: map-get($themes, "mint"); // Fill with mint color when checked
+            border-color: map-get($themes, "mint"); // Change border color to mint
+        }
+    }
+}
+
+// Form container for better layout and spacing
 .form-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-.form-container .form-group {
-  margin-bottom: 15px;
-}
-.form-container .form-group label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  display: inline-block;
-}
-.form-container .form-group label .checkbox-input,
-.form-container .form-group label .radio-input {
-  margin-right: 10px;
-  margin-top: 5px;
-  width: auto;
+    max-width: 400px; /* Fixed max width */
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
 }
 
+// Grouping for Form Elements (Labels and Inputs)
+.form-group {
+    margin-bottom: 15px;
+}
+
+// Label Styling
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+// Checkbox and Radio Input Styling within Labels
+.form-group label .checkbox-input,
+.form-group label .radio-input {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: auto; /* Auto width for checkboxes and radio buttons */
+}

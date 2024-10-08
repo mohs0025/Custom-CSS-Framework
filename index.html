@@ -53,25 +53,35 @@
 
 <!-- table -->
 <section>
-    <h2>Tables</h2>
-    <table>
+    <h2>WhimsyHue Customizable Table</h2>
+    <table class="table-bordered table-striped">
         <thead>
-            <tr class="bg-primary color-white ">
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
+            <tr class="bg-primary color-white">
+                <th class="col-3">Feature</th>
+                <th class="col-6">Description</th>
+                <th class="col-3 text-center">Example Usage</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>John Doe</td>
-                <td>30</td>
-                <td>New York</td>
+                <td>Custom Themes</td>
+                <td>Predefined color schemes to enhance your design.</td>
+                <td class="text-center">Primary, Secondary, Mint</td>
             </tr>
             <tr>
-                <td>Jane Smith</td>
-                <td>25</td>
-                <td>Los Angeles</td>
+                <td>Responsive Layouts</td>
+                <td>Built to adapt to different screen sizes and devices.</td>
+                <td class="text-center">Containers with breakpoints</td>
+            </tr>
+            <tr>
+                <td>Utility Classes</td>
+                <td>Quickly apply styles like text alignment and padding.</td>
+                <td class="text-center">.text-center, .padding-1rem</td>
+            </tr>
+            <tr>
+                <td>Form Controls</td>
+                <td>Styled inputs, checkboxes, and radio buttons.</td>
+                <td class="text-center">Custom checkboxes and inputs</td>
             </tr>
         </tbody>
     </table>
@@ -79,69 +89,7 @@
 
 
 
-<!-- order-unorder Lists -->
-      
-<!-- <h4>Order Lists</h4> -->
 
-<!-- Ordered List (with numbers) -->
-<!-- <ol>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ol>
-
-<h4>Unorder Lists</h4> -->
-<!-- Unordered List (with bullets) -->
-<!-- <ul>
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <li>Item 3</li>
-</ul>
-
-
-<h2>Forms</h2>
-        <form>
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your Name">
-            <label for="message">Message</label>
-            <textarea id="message" rows="4" placeholder="Your Message"></textarea>
-            
-        </form>
-
-        <div class="form-container">
-            <form>
-                <div class="form-group">
-                    <label for="checkboxInput">
-                        <input type="checkbox" id="checkboxInput" class="checkbox-input"> 
-                        Check me!
-                    </label>
-                </div>
-                <div class="form-group">
-                    <p>Select an option:</p>
-                    <label>
-                        <input type="radio" name="radioInput" value="option1" class="radio-input"> Option 1
-                    </label>
-                    <label>
-                        <input type="radio" name="radioInput" value="option2" class="radio-input"> Option 2
-                    </label>
-                </div>
-
-                <h2>Password</h2>
-    <input type="password" placeholder="Password input" id="password" name="password">
-            </form>
-        </div> -->
-        
-        
-
-
-<!-- Buttons -->
-<!-- <a class="btn" href="#">This is a button</a>
-
-<a class="btn-error" href="#">This is an error button</a>
-
-<a class="btn-success" href="#">This is a success button</a>
-
-<a class="btn-info" href="#">This is an info button</a> -->
 
 <h3>Unordered List Example</h3>
 <ul class="list-bulleted">
@@ -157,7 +105,7 @@
     <li>Enjoy the vibrant styling!</li>
 </ol>
 
-
+<div class="form-container">
 <!-- Inputs section -->
 <h3>Input Fields</h3>
 
@@ -188,37 +136,46 @@
     <input type="radio" name="option">
     Option 2
 </label>
+</div>
 
 
-<div class="container">
-    <!-- Input Fields -->
-    <h3>Input Fields</h3>
-    <label for="email">Email:</label>
-    <input type="email" class="input-text" id="email" placeholder="Enter your email">
+<div class="form-container">
+    <h3>Form</h3>
+    <form>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
 
-    <!-- Tables -->
-    <h3>Tables</h3>
-    <table>
-        <thead>
-            <tr class="bg-primary color-white">
-                <th>Name</th>
-                <th>Age</th>
-                <th>City</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>30</td>
-                <td>New York</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>25</td>
-                <td>Los Angeles</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+
+        <!-- Checkboxes with updated styling -->
+        <div class="form-group">
+            <label class="input-checkbox">
+                <input type="checkbox" class="checkbox-input">
+                Subscribe to newsletter
+            </label>
+            <label class="input-checkbox">
+                <input type="checkbox" class="checkbox-input">
+                Accept Terms and Conditions
+            </label>
+        </div>
+
+        <!-- Radio Buttons with updated styling -->
+        <div class="form-group">
+            <label class="input-radio">
+                <input type="radio" name="radioInput" class="radio-input">
+                Option 1
+            </label>
+            <label class="input-radio">
+                <input type="radio" name="radioInput" class="radio-input">
+                Option 2
+            </label>
+        </div>
+    </form>
 </div>
 
 
