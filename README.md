@@ -80,7 +80,7 @@ WhimsyHue provides multiple button styles:
 WhimsyHue includes custom-styled form inputs, checkboxes, radio buttons, and a submit button for intuitive form designs.
 
 ## Installation
-**1. Clone the Repository:** git clone https://github.com/yourusername/whimsyhue.git
+**1. Clone the Repository:** git clone https://github.com/mohs0025/Custom-CSS-Framework 
 **2. Link the CSS:** Link the compiled CSS file whimsyhue.css into your HTML like this:
 <link rel="stylesheet" href="css/whimsyhue.css">
 
