@@ -6,7 +6,7 @@ WhimsyHue is a lively and imaginative CSS framework designed to add a playful an
 
 ## Features
 
-- **Custom Themes:**  
+### Custom Themes
   WhimsyHue features a bright, playful color palette that includes:
   - Magenta (#D61355)
   - Orange (#F94A29)
@@ -18,54 +18,39 @@ WhimsyHue is a lively and imaginative CSS framework designed to add a playful an
   - White (#FFFFFF)
 
   These colors combine to create a joyful, engaging user experience. Custom utility classes for background and text colors are included.
+  
+  ![WhimsyHue Color Palette](./images/color_palette.png)
 
-- **Utility Classes:**  
+  **Example Color Classes:**
+  - `.color-primary`
+  - `.bg-secondary`
+  - `.color-warning`
+  - `.bg-info`
+  - `.bg-success`
+
+### Typography:
+  Predefined styles for headings (`h1` to `h6`), paragraphs, and text formatting like `strong` and `em`. Customizable font sizes and weights are included for consistency across the project.
+
+### Utility Classes
   WhimsyHue provides utility classes for common styling needs:
   - **Text Alignment:** `.text-left`, `.text-center`, `.text-right`
   - **Button Variants:** `.btn-primary`, `.btn-secondary`, `.btn-warning`, `.btn-info`, `.btn-success`, `.btn-dark`, `.btn-light`
   - **Spacing Utilities:** `.margin-md`, `.padding-lg`
   - **Width Utilities:** `.width-sm`, `.width-md`, `.width-lg`
 
-- **Responsive Design:**  
-  WhimsyHue is built with responsiveness in mind. It offers media queries and utility classes to ensure your designs adapt seamlessly to different screen sizes.
+### Forms:
+  WhimsyHue includes custom-styled form inputs, checkboxes, radio buttons, and a submit button for intuitive form designs.
 
-- **Forms:**  
-  Custom input styles for text fields, checkboxes, and radio buttons are included. Forms are styled to be visually appealing and intuitive.
-
-- **Tables:**  
-  Includes table styles such as:
-  - **Basic Tables**
-  - **Striped Rows and Columns**
-  - **Hoverable Rows**
-  - **Dark Mode Tables**
-
-  These tables are responsive and designed to work well on different screen sizes.
-
-- **Typography:**  
-  Predefined styles for headings (`h1` to `h6`), paragraphs, and text formatting like `strong` and `em`. Customizable font sizes and weights are included for consistency across the project.
-
-## Color Palette
-WhimsyHue offers a dynamic color palette. The predefined colors can be applied using utility classes like `.bg-primary`, `.color-secondary`, etc.
-![WhimsyHue Color Palette](./images/color_palette.png)
-
-
-### Example Color Classes:
-- `.color-primary`
-- `.bg-secondary`
-- `.color-warning`
-- `.bg-info`
-- `.bg-success`
-
-## Table Variants
-
+### Table Variants
 WhimsyHue offers several table variants to enhance user interfaces:
 
 - **Basic Table:** A clean, responsive table layout.
 - **Striped Table:** Adds alternating background colors for rows or columns.
 - **Hoverable Table:** Highlights rows on hover.
 - **Dark Mode Table:** Offers a dark-themed table for modern UI needs.
+These tables are responsive and designed to work well on different screen sizes.
 
-## Buttons
+### Buttons
 WhimsyHue provides multiple button styles:
 - **Primary Button:** .btn-primary 
 - **Secondary Button:** .btn-secondary
@@ -74,11 +59,9 @@ WhimsyHue provides multiple button styles:
 - **Success Button:** .btn-success
 - **Dark Button:** .btn-dark
 
-**Example**: <button class="btn btn-primary">Primary Button</button>
-
-## Forms
-WhimsyHue includes custom-styled form inputs, checkboxes, radio buttons, and a submit button for intuitive form designs.
-
+### Responsive Design:
+  WhimsyHue is built with responsiveness in mind. It offers media queries and utility classes to ensure your designs adapt seamlessly to different screen sizes.
+  
 ## Installation
 **1. Clone the Repository:** git clone https://github.com/mohs0025/Custom-CSS-Framework 
 **2. Link the CSS:** Link the compiled CSS file whimsyhue.css into your HTML like this:
