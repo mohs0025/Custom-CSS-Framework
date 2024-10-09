@@ -45,8 +45,9 @@ WhimsyHue is a lively and imaginative CSS framework designed to add a playful an
   Predefined styles for headings (`h1` to `h6`), paragraphs, and text formatting like `strong` and `em`. Customizable font sizes and weights are included for consistency across the project.
 
 ## Color Palette
-
 WhimsyHue offers a dynamic color palette. The predefined colors can be applied using utility classes like `.bg-primary`, `.color-secondary`, etc.
+![WhimsyHue Color Palette](./images/color_palette.png)
+
 
 ### Example Color Classes:
 - `.color-primary`
