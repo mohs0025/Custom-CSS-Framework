@@ -1,19 +1,151 @@
-@use 'variables';
+// Variables for colors
+$primary: #D61355;
+$secondary: #F94A29;
+$hover-bg: #f0f0f0;
+$table-border: #ddd;
 
+// Table Styles
 table {
     width: 100%;
     border-collapse: collapse;
-    
-    th {
+
+    th, td {
         padding: 10px;
-        // text-align: left;
-        font-weight: bold;
+        text-align: left;
+        border: 1px solid $table-border;
+    }
+
+    th {
+        background-color: $primary;
+        color: white;
+    }
+}
+
+// Striped Rows
+.table-striped tbody tr:nth-child(odd) {
+    background-color: $hover-bg;
+}
+
+// Hoverable Rows
+.table-hover tbody tr:hover {
+    background-color: $secondary;
+    color: white;
+}
+
+// Responsive Table Utility
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
     }
 
     td {
-        padding: 10px;
-        border: 1px solid #ddd; 
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
     }
 }
 
 
+// Variables for colors
+$primary: #D61355;
+$secondary: #F94A29;
+$hover-bg: #f0f0f0;
+$table-border: #ddd;
+$dark-bg: #333;
+$dark-text: #FFF;
+$dark-border: #555;
+
+// Table Styles
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid $table-border;
+    }
+
+    th {
+        background-color: $primary;
+        color: white;
+    }
+}
+
+// Striped Columns
+.table-striped-columns td:nth-child(odd) {
+    background-color: $hover-bg;
+}
+
+// Dark Mode
+.table-dark {
+    background-color: $dark-bg;
+    color: $dark-text;
+    border-color: $dark-border;
+
+    th, td {
+        border-color: $dark-border;
+    }
+
+    th {
+        background-color: $dark-border;
+        color: $dark-text;
+    }
+
+    tbody tr:hover {
+        background-color: darken($dark-bg, 10%);
+    }
+}
+
+// Responsive Table Utility
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    tbody tr {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

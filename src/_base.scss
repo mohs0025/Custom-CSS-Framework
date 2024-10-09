@@ -73,7 +73,9 @@ a {
     margin: 10px 0;
     
     &:hover {
-        opacity: 0.8;
+        // background-color: map-get($themes, "dark");
+        // color: map-get($themes, "warning");
+        opacity: 0.5;
     }
 }
 
